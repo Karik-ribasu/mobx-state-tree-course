@@ -12,16 +12,26 @@ const initialState = {
       name: "cobaia 1",
       gender: "m"
     },
+    "81as": {
+      id: "81as",
+      name: "cobaia 2",
+      gender: "f"
+    },
+    "9f8g": {
+      id: "9f8g",
+      name: "cobaia 3",
+      gender: "m"
+    },
 
     "ufg3": {
       id: "ufg3",
-      name: "cobaia 2",
+      name: "cobaia 4",
       gender: "f"
     }
   }
 }
 
-const group = Group.create(initialState)
+const group = window.group = Group.create(initialState)
 
 function renderApp() {
   ReactDOM.render(

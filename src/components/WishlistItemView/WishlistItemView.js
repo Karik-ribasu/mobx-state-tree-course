@@ -3,7 +3,7 @@ import WishlistItemEdit from "../WishlistItemEdit/WishlistItemEdit"
 import { observer } from "mobx-react"
 import { clone, getSnapshot, applySnapshot } from "mobx-state-tree"
 
-const WishlistItemView = ({ item }) => {
+const WishlistItemView = ({ item, readonly }) => {
     let [editing, setEditing] = React.useState(false)
     let [itemClone, setItemClone] = React.useState(null)
 
@@ -29,11 +29,11 @@ const WishlistItemView = ({ item }) => {
         </li>
     ) : (
         <li className="wishlist__item">
-            {item.image && <img src={item.image} classname="wishlist__item-image"></img>}
+            {item.image && <img src={item.image} className="wishlist__item-image"></img>}
             <h3 className="wishlist__item-name">{item.name}</h3>
             <span className="wishlist__item-price">{item.price}</span>
-            <button onClick={toggleEdit}>Edit</button>
-            <button onClick={item.remove}>Remove</button>
+            { !readonly && <button onClick={toggleEdit}>Edit</button>}
+            { !readonly && <button onClick={item.remove}>Remove</button>}
         </li>
     )
 

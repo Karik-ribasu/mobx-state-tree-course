@@ -1,26 +1,68 @@
 {
-    "suggestions_f": [
-      {
-        "name": "The Notebook",
-        "price": 10.31,
-        "image": "https://images-na.ssl-images-amazon.com/images/I/51ZXkAJNYWL._AC_US218_.jpg"
+  "suggestions_f": [
+    {
+      "name": "The Notebook",
+      "price": 10.31,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51ZXkAJNYWL._AC_US218_.jpg",
+      "id": 45
+    },
+    {
+      "name": "LEGO Mindstorms EV3",
+      "price": 349.95,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71CpQw%2BufNL._SL1000_.jpg",
+      "id": 448
+    }
+  ],
+  "suggestions_m": [
+    {
+      "name": "Machine Gun Preacher",
+      "price": 7.35,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91AFFK9fwkL._SY445_.jpg",
+      "id": 479
+    },
+    {
+      "name": "LEGO Mindstorms EV3",
+      "price": 349.95,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71CpQw%2BufNL._SL1000_.jpg",
+      "id": 45977
+    }
+  ],
+  "users": [
+    {
+      "id": "u1i2",
+      "name": "cobaia 1",
+      "gender": "m",
+      "wishlist": {
+        "items": []
       },
-      {
-        "name": "LEGO Mindstorms EV3",
-        "price": 349.95,
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71CpQw%2BufNL._SL1000_.jpg"
-      }
-    ],
-    "suggestions_m": [
-      {
-        "name": "Machine Gun Preacher",
-        "price": 7.35,
-        "image": "https://images-na.ssl-images-amazon.com/images/I/91AFFK9fwkL._SY445_.jpg"
+      "recipient": "81as"
+    },
+    {
+      "id": "81as",
+      "name": "cobaia 2",
+      "gender": "f",
+      "wishlist": {
+        "items": []
       },
-      {
-        "name": "LEGO Mindstorms EV3",
-        "price": 349.95,
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71CpQw%2BufNL._SL1000_.jpg"
-      }
-    ]
-  }
+      "recipient": "u1i2"
+    },
+    {
+      "id": "9f8g",
+      "name": "cobaia 3",
+      "gender": "m",
+      "wishlist": {
+        "items": []
+      },
+      "recipient": "81as"
+    },
+    {
+      "id": "ufg3",
+      "name": "cobaia 4",
+      "gender": "f",
+      "wishlist": {
+        "items": []
+      },
+      "recipient": "u1i2"
+    }
+  ]
+}
